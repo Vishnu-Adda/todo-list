@@ -20,6 +20,10 @@ $("input[type='text']").keypress(function(event){
 		var todoText = $(this).val();
 		$(this).val("");
 		// Make a new li in ul
-		$("ul").append("<li> <span>X</span> " + todoText + "</li>");
+		$("ul").append("<li> <span><i class='fa fa-trash-alt'></i></span> " + todoText + "</li>");
 	}
+});
+
+$("#toggle-form").click(function(){
+	$("input[type='text']").fadeToggle();
 });

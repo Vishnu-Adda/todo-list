@@ -4,6 +4,8 @@
 	<title>Todo List</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/todo-list.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<!-- Just uses the CDN -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -11,14 +13,14 @@
 <body>
 
 	<div id="container">
-		<h1>To-do List</h1>
+		<h1>To-do List <span id="toggle-form"><i class="far fa-plus-square"></i></span></h1>
 
-		<input type="text">
+		<input type="text" placeholder="Add New Todo">
 
 		<ul>
-			<li> <span>X</span> Go to class</li>
-			<li> <span>X</span> Buy some clothes</li>
-			<li> <span>X</span> Buy some groceries</li>
+			<li> <span><i class="fa fa-trash-alt"></i></span> Go to class</li>
+			<li> <span><i class="fa fa-trash-alt"></i></span> Buy some clothes</li>
+			<li> <span><i class="fa fa-trash-alt"></i></span> Buy some groceries</li>
 		</ul>
 	</div>
 
